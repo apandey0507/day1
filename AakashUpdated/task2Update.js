@@ -91,9 +91,7 @@ function upData(data) {
    {
     data = document.querySelector(".input").value.split(" ");
   
-    if (data.length === 1 && data[0] === "") {
-      alert("No DATA! No Analysis!");
-    }
+    
   
   
     for (let i = 0; i < data.length; i++) {
@@ -110,7 +108,7 @@ function upData(data) {
   
     
     var op = selectEl.value;
-    document.querySelector(".result").style.borderColor = "red";
+    document.querySelector(".result").style.borderColor = "gray";
     if (mymap.get(op) != undefined) {
       divEl.innerHTML = mymap.get(op);
     } else if (op == 0) {
