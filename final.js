@@ -18,7 +18,7 @@ function up(arr)
 
 function down(arr)
 {
-    ;
+    
     return arr.sort((a,b)=>b-a);
 }
 function max(arr)
