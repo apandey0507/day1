@@ -4,6 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      *
+      {
+        font-size: large;
+      }
+      .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+      input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+    </style>
   </head>
   <body>
     <h4>Enter the data: (separated by a space)</h4>
@@ -27,7 +57,8 @@
       </p>
     </div>
     <br />
-    <input class="result" disabled>
+    <p>Output</p>
+    <input type="text" class="result" disabled>
    
     <script src="task2Update.js"></script>
   </body>

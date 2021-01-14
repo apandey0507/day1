@@ -99,9 +99,10 @@ function upData(data) {
     for (let i = 0; i < data.length; i++) {
       data[i] = Number(data[i].trim());
     }
-    if(data.some(isNaN))
+    if(data.some(isNaN) || data.length===1)
     {
       document.querySelector(".result").value="Please Provide Numbers With space (Input Error)";
+      document.querySelector(".result").style.borderColor = "red";
      
     }
     else
@@ -109,7 +110,7 @@ function upData(data) {
   
     
     var op = selectEl.value;
-  
+    document.querySelector(".result").style.borderColor = "red";
     if (mymap.get(op) != undefined) {
       divEl.innerHTML = mymap.get(op);
     } else if (op == 0) {
